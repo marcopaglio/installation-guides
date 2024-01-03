@@ -1,15 +1,13 @@
 
 # Maven
 
-## What it is
+ABOUT
 
-TODO
-
-## Installation guide
+### Installation guide
 
 The installation guide depending on your operating system.
 
-### Linux (Ubuntu)
+#### Linux (Ubuntu)
 
 First of all check if Maven is already installed by running on the terminal:
 ```
