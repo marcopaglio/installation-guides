@@ -11,7 +11,7 @@ TODO
 
 The installation guide depending on your operating system.
 
-#### Linux (Ubuntu 22.04)
+#### Linux
 
 A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/engine/install/ubuntu/). It follows an essential extract:
 
@@ -20,7 +20,8 @@ A complete step-by-step guide is provided by the [Docker official webpage](https
    for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
    ```
    `apt-get` might report that you have none of these packages installed.
-2. Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository by running following commands:
+   
+2. Before you install Docker Engine *for the first time* on a new host machine, you need to set up the Docker repository by running following commands:
    ```
    # Add Docker's official GPG key:
    sudo apt-get update
@@ -36,17 +37,17 @@ A complete step-by-step guide is provided by the [Docker official webpage](https
      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
    sudo apt-get update
    ```
-3. To install the latest version, run:
+   
+3. To install the latest version of Docker Engine (and also Docker Compose), run:
    ```
    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
    ```
+   
 4. Verify that the Docker Engine installation is successful by running the `hello-world` image:
    ```
    sudo docker run hello-world
    ```
    This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
-
-You have now successfully installed and started Docker Engine.<br>
 
 In Linux, Docker commands must be run as the superuser. Add your user to the docker group by running the following command:
 ```
@@ -64,4 +65,4 @@ The installation guide depending on your operating system.
 
 #### Linux (Ubuntu)
 
-The same of [Docker Engine](#installation-guide).
+Follow the [Docker Engine Installation Guide](#installation-guide) to install Docker Compose, too.
