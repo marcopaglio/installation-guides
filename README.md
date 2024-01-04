@@ -13,8 +13,7 @@ On Ubuntu 22.04, Git should be already installed. You can check it by running:
 ```
 git --version
 ```
-If the terminal doesn't recognize the command, then install Git through the following commands:
+If the terminal doesn't recognize the command, then install Git through the following command:
 ```
-sudo apt-get update
-sudo apt-get install git
+sudo apt-get update && sudo apt-get install git
 ```
