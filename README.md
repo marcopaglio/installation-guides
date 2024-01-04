@@ -3,11 +3,11 @@
 
 ABOUT
 
-### Installation guide
+### Installation Guide
 
 The installation guide depending on your operating system.
 
-#### Linux (Ubuntu)
+#### Linux
 
 First of all check if Maven is already installed by running on the terminal:
 ```
@@ -33,7 +33,7 @@ tar -xvf `<BIN_FILE>` -C <MVN_DIR>
 ```
 If the destination directory doesn't exist (e.g. `/usr/local/apache-maven`), create it by running `mkdir -p <MVN_DIR>` before the extraction.<br>
 
-Now add the `bin` directory of the extracted archive (e.g. `/usr/local/apache-maven/apache-maven-3.8.6/bin`) to the PATH environment variable. To make the change permanent, define the `$PATH` variable in the shell configuration file `.bashrc`:
+Now, add the `bin` directory of the extracted archive (e.g. `/usr/local/apache-maven/apache-maven-3.8.6/bin`) to the PATH environment variable. To make the change permanent, define the `$PATH` variable in the shell configuration file `.bashrc`. About that, open a terminal 
 ```
 nano ~/.bashrc
 ```
@@ -49,5 +49,3 @@ Once saved, we can reload the environment configuration without restarting:
 source ~/.bashrc
 ```
 Finally, we can verify the PATH environment variable contains `<MVN_DIR>` through `echo $PATH` and if Maven has been added through `mvn -version`.
-
-> :warning: **Attention**: At each execution of `source ~/.bashrc` the PATH variable is updated by adding a redundant `$M2` value. For this reason, once Maven is set, re-open `.bashrc`, delete the added lines and save it.
