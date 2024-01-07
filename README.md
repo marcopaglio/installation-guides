@@ -11,6 +11,16 @@ TODO
 
 The installation guide depending on your operating system.
 
+#### Windows
+
+A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/desktop/install/windows-install/). It follows an essential extract:
+
+1. Install the last version of WSL from the [Microsoft Store](https://aka.ms/wslstorepage).
+
+3. Download [Docker Desktop](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
+
+4. 
+
 #### Linux
 
 A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/engine/install/ubuntu/). It follows an essential extract:
