@@ -32,6 +32,22 @@ The Java Development Kit (JDK) provides the Java Runtime Environment (JRE), Java
 
 The installation guide depending on your operating system.
 
+#### Windows
+
+First of all check with `java -version`.<br>
+
+Download the binary from [Oracle](https://www.oracle.com/java/technologies/downloads/archive/) or [OpenJDK](https://jdk.java.net/archive/) archives.<br>
+
+Extract files in `C:\Program Files\Java`.<br>
+
+Delete the following entries under "Path" (if they exist):
+- C:\ProgramData\Oracle\Java\javapath
+- C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+Insert the following entry instead:
+- %JAVA_HOME%\bin
+
+Set `JAVA_HOME` with `C:\Program Files\Java\<ARCHIVE_NAME>` extracted.
+
 #### Linux
 
 Instead, if `Command 'java' not found` appears, or the major version `xx` is not the desired one, then install the JRE with:
