@@ -7,7 +7,15 @@ ABOUT
 
 The installation guide depending on your operating system.
 
-#### Linux (Ubuntu 22.04)
+#### Windows
+
+Download Git from [here](https://gitforwindows.org/).<br>
+
+Once the installer has started, follow the instructions as provided in the Git Setup wizard screen until the installation is complete.<br>
+
+Open the Command Prompt (or Git Bash if you selected not to use the standard Git Windows Command Prompt during the Git installation), and type `git -v` to verify Git was installed.
+
+#### Linux
 
 On Ubuntu 22.04, Git should be already installed. You can check it by running:
 ```
