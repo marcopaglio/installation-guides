@@ -21,10 +21,42 @@ There are four platforms of the Java programming language, each of which consist
 
 - **JavaFX** is used for creating rich internet applications using a lightweight user-interface API. JavaFX applications use hardware-accelerated graphics and media engines to take advantage of higher-performance clients and high-level APIs for connecting to networked data sources.
 
-
 ## Installation Guide
 
 The installation guide depending on your operating system.
+
+### Windows
+
+First of all, run the following command on terminal:
+```
+java -version
+```
+If something like `openjdk version "xx"` appears, where `xx` is a number, then you already have Java installed.<br>
+Instead, if `java` is not recognize as command or the major version `xx` is not the desired one, then:
+- Download the Java zip file from [Oracle](https://www.oracle.com/java/technologies/downloads/archive/) or [OpenJDK](https://jdk.java.net/archive/) archives.
+- Extract the zip file in `C:\Program Files\Java`, let's call it `<ARCHIVE_NAME>`.
+
+Once done, set the `JAVA_HOME` and `Path` environment variables that point to the same Java installation to avoid inconsistencies and to decide which Java version an application uses.
+
+#### JAVA_HOME
+
+`JAVA_HOME` environment variable has to be set to `C:\Program Files\Java\<ARCHIVE_NAME>`, where `<ARCHIVE_NAME>` is the extracted zip file name. You can do it by running the following command on Command Prompt as Administrator:
+```
+setx JAVA_HOME C:\Program Files\Java\<ARCHIVE_NAME> -m
+```
+You can check the actual value by running `echo $env:JAVA_HOME` in *another* Command Prompt.<br>
+
+Alternatively, you can do the same thing manually: **System** > **Advanced System Settings** > **Environment Variables...** > in the lower list (*System variables*) find the entry named `JAVA_HOME` and click **Edit...** if it exists, or click **New...** if it doesn't exist > write `JAVA_HOME` in Name and choose `C:\Program Files\Java\<ARCHIVE_NAME>` for Value > confirm changes. The `JAVA_HOME` value is now changed or added.
+
+> :alarm_clock: **N.B**: The top list (*User variables*) should not contain any Java-related entries. Delete them if you find them.
+
+#### Path
+
+In the `Path` environment variable has to be added the `%JAVA_HOME%\bin` value: **System** > **Advanced System Settings** > **Environment Variables...** > in the lower list (*System variables*) find the entry named `Path` and click **Edit...** > **New** > write `%JAVA_HOME%\bin` in the new line > confirm changes. The `Path` value is now changed.
+
+Moreover, delete the following values under `Path` if they exist:
+- `C:\ProgramData\Oracle\Java\javapath`
+- `C:\Program Files (x86)\Common Files\Oracle\Java\javapath`
 
 ### Linux
 
@@ -32,7 +64,7 @@ If your aim is only running Java programs on Linux, you only need to install the
 
 #### JRE
 
-First of all run the following command on terminal:
+First of all, run the following command on terminal:
 ```
 java -version
 ```
@@ -41,11 +73,11 @@ Instead, if `Command 'java' not found` appears or the major version `xx` is not 
 ```
 sudo apt-get update && sudo apt install openjdk-<XX>-jre
 ```
-Where you have to replace `<XX>` with the desired major version (e.g. `1.8`, `11`, `17`, etc.).
+You have to replace `<XX>` with the desired major version (e.g. `1.8`, `11`, `17`, etc.).
 
 #### JDK
 
-First of all run the following command on terminal:
+First of all, run the following command on terminal:
 ```
 javac --version
 ```
@@ -54,20 +86,4 @@ Instead, if `Command 'javac' not found` appears or the major version `xx` is not
 ```
 sudo apt-get update && sudo apt install openjdk-<XX>-jdk
 ```
-Where you have to replace `<XX>` with the desired major version (e.g. `1.8`, `11`, `17`, etc.).
-
-### Windows
-
-First of all check with `java -version`.<br>
-
-Download the binary from [Oracle](https://www.oracle.com/java/technologies/downloads/archive/) or [OpenJDK](https://jdk.java.net/archive/) archives.<br>
-
-Extract files in `C:\Program Files\Java`.<br>
-
-Delete the following entries under "Path" (if they exist):
-- C:\ProgramData\Oracle\Java\javapath
-- C:\Program Files (x86)\Common Files\Oracle\Java\javapath
-Insert the following entry instead:
-- %JAVA_HOME%\bin
-
-Set `JAVA_HOME` with `C:\Program Files\Java\<ARCHIVE_NAME>` extracted.
+You have to replace `<XX>` with the desired major version (e.g. `1.8`, `11`, `17`, etc.).
