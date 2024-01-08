@@ -3,30 +3,36 @@
 
 ABOUT
 
-## Docker Engine
-
-TODO
-
-### Installation Guide
+## Installation Guide
 
 The installation guide depending on your operating system.
 
-#### Windows
+### Windows
 
 A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/desktop/install/windows-install/). It follows an essential extract:
 
-1. Install the last version of WSL from the [Microsoft Store](https://aka.ms/wslstorepage).
+1. Install the last version of WSL from the [Microsoft Store](https://aka.ms/wslstorepage) or update it if a previous version is already installed through `wsl --update`.
 
-2. Download [Docker Desktop](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
+2. Download the Docker Desktop installer.
 
-3. Then, we have to tell the Docker client and the docker-maven-plugin that the Docker daemon is listening on that TCP address. This can be done by setting the standard Docker environment variable DOCKER_HOST (which is read by docker-maven-plugin as well):
-   ```
-   setx DOCKER_HOST tcp://localhost:2375 -m
-   ```
+3. Follow the wizard instructions to authorize the installer and proceed with the installation.
 
-4. Access the General Settings dialog of Docker for Windows and enable “Expose daemon on tcp://localhost:2375…” > Apply and restart. Then close Docker (Quit Docker Desktop) and restart the service.
+#### Setup for Maven
 
-#### Linux
+If your aim is using Docker with Maven through [docker-maven-plugin](https://github.com/fabric8io/docker-maven-plugin), some stardard configuration must be changed.<br>
+
+By default, on Windows the Docker daemon is accessible through a named pipe instead of a socket (as in Linux and macOS). When the docker-maven-plugin goals are executed such pipe instances quickly become busy making the goals fail with the following error:
+```
+Error: DOCKER> Cannot create docker access object [\\.\pipe\docker_engine (All pipe instances are busy)]
+```
+In order to solve the problem: access the **General Settings** dialog of Docker Desktop > enable `Expose daemon on tcp://localhost:2375…` > **Apply and restart** > close Docker (**Quit Docker Desktop**) and restart it for the changes to be applied.<br>
+
+Then, we have to tell the Docker client and the docker-maven-plugin that the Docker daemon is listening on that TCP address. This can be done by setting the standard Docker environment variable `DOCKER_HOST` (which is read by docker-maven-plugin as well). Run the following command on a Command Prompt as Administrator:
+```
+setx DOCKER_HOST tcp://localhost:2375 -m
+```
+
+### Linux
 
 A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/engine/install/ubuntu/). It follows an essential extract:
 
@@ -64,20 +70,8 @@ A complete step-by-step guide is provided by the [Docker official webpage](https
    ```
    This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
 
-In Linux, Docker commands must be run as the superuser. Add your user to the docker group by running the following command:
+On Linux, Docker commands must be run as the superuser. Add your user to the docker group by running the following command:
 ```
 sudo usermod -aG docker ${USER}
 ```
 After that, you need to logout and login again. Then, you can run Docker commands without using `sudo` with your user.
-
-## Docker Compose
-
-TODO
-
-### Installation Guide
-
-The installation guide depending on your operating system.
-
-#### Linux (Ubuntu)
-
-Follow the [Docker Engine Installation Guide](#installation-guide) to install Docker Compose, too.
