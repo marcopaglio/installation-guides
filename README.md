@@ -26,6 +26,8 @@ A complete step-by-step guide is provided by the [Docker official webpage](https
    setx DOCKER_HOST tcp://localhost:2375 -m
    ```
 
+5. Restart your machine for applying changes.
+
 #### Linux
 
 A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/engine/install/ubuntu/). It follows an essential extract:
