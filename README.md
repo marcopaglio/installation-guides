@@ -33,8 +33,8 @@ java -version
 ```
 If something like `openjdk version "xx"` appears, where `xx` is a number, then you already have Java installed.<br>
 Instead, if `java` is not recognize as command or the major version `xx` is not the desired one, then:
-- Download the Java zip file from [Oracle](https://www.oracle.com/java/technologies/downloads/archive/) or [OpenJDK](https://jdk.java.net/archive/) archives.
-- Extract the zip file in `C:\Program Files\Java`, let's call it `<ARCHIVE_NAME>`.
+- Download the Java binary zip file from [Oracle](https://www.oracle.com/java/technologies/downloads/archive/) or [OpenJDK](https://jdk.java.net/archive/) archives.
+- Extract the archive (let's call it `<ARCHIVE_NAME>`) in `C:\Program Files\Java`.
 
 Once done, set the `JAVA_HOME` and `Path` environment variables that point to the same Java installation to avoid inconsistencies and to decide which Java version an application uses.
 
