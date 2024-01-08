@@ -1,9 +1,26 @@
 
 # Java
 
-The Java Runtime Environment (JRE) is a package of everything necessary to run a compiled Java program, including the Java Virtual Machine (JVM), the Java Class Library, the java command, and other infrastructure. However, it cannot be used to create new programs.<br>
+[Java technology](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html) is both a programming language and a platform. The *Java programming language* is a high-level object-oriented language that has a particular syntax and style. A *Java platform* is a particular environment in which Java programming language applications run.<br>
 
-The Java Development Kit (JDK) is the full-featured for Java. It has everything the JRE has, but also the compiler (javac) and tools (like javadoc and jdb) for creating and compiling Java source code.
+There are three main components of Java programming language:
+
+- The **Java virtual machine** (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode.
+
+- The **Java Runtime Environment** (JRE) is a package of everything necessary to run a compiled Java program, including the JVM, the Java Class Library, the java command, and other infrastructure. However, it cannot be used to create new programs.
+
+- The **Java Development Kit** (JDK) is the full-featured for Java. It has everything the JRE has, but also the compiler (javac) and tools (like javadoc and jdb) for creating and compiling Java source code.
+
+There are four platforms of the Java programming language, each of which consists of a JVM and an API:
+
+- **Standard Edition** (Java SE) provides APIs for core functionalities of the Java programming language, from the basic types and objects to high-level classes that are used for networking, security, database access, GUI development, and XML parsing. In addition to the core API, the Java SE platform consists of a virtual machine, development tools, deployment technologies, and other class libraries and toolkits commonly used in Java technology applications.
+
+- **Enterprise Edition** (Java EE) is built on top of the Java SE platform and provides an API and runtime environment for developing and running large-scale, multi-tiered, scalable, reliable, and secure network applications.
+
+- **Micro Edition** (Java ME) provides an API and a small-footprint virtual machine for running Java programming language applications on small devices, like mobile phones. The API is a subset of the Java SE API.
+
+- **JavaFX** is used for creating rich internet applications using a lightweight user-interface API. JavaFX applications use hardware-accelerated graphics and media engines to take advantage of higher-performance clients and high-level APIs for connecting to networked data sources.
+
 
 ## Installation Guide
 
@@ -11,9 +28,11 @@ The installation guide depending on your operating system.
 
 ### Linux
 
+If your aim is only running Java programs on Linux, you only need to install the JRE. Instead, if you are planning to do some Java programming, you need to install the JDK. 
+
 #### JRE
 
-If your aim is only running Java programs on Linux, you only need to install the JRE. First of all run the following command on terminal:
+First of all run the following command on terminal:
 ```
 java -version
 ```
@@ -26,7 +45,7 @@ Where you have to replace `<XX>` with the desired major version (e.g. `1.8`, `11
 
 #### JDK
 
-Instead, if you are planning to do some Java programming, you need to install the JDK. First of all run the following command on terminal:
+First of all run the following command on terminal:
 ```
 javac --version
 ```
