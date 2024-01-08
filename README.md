@@ -19,14 +19,12 @@ A complete step-by-step guide is provided by the [Docker official webpage](https
 
 2. Download [Docker Desktop](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
 
-3. Access the General Settings dialog of Docker for Windows and enable “Expose daemon on tcp://localhost:2375…” > Apply and Restart.
-
-4. Then, we have to tell the Docker client and the docker-maven-plugin that the Docker daemon is listening on that TCP address. This can be done by setting the standard Docker environment variable DOCKER_HOST (which is read by docker-maven-plugin as well):
+3. Then, we have to tell the Docker client and the docker-maven-plugin that the Docker daemon is listening on that TCP address. This can be done by setting the standard Docker environment variable DOCKER_HOST (which is read by docker-maven-plugin as well):
    ```
    setx DOCKER_HOST tcp://localhost:2375 -m
    ```
 
-5. Restart your machine for applying changes.
+4. Access the General Settings dialog of Docker for Windows and enable “Expose daemon on tcp://localhost:2375…” > Apply and restart. Then close Docker (Quit Docker Desktop) and restart the service.
 
 #### Linux
 
