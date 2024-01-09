@@ -45,7 +45,7 @@ You can check the actual value by running `echo $env:MAVEN_HOME` in *another* Co
 
 Alternatively, you can do the same thing manually: **System** > **Advanced System Settings** > **Environment Variables...** > in the lower list (*System variables*) find the entry named `MAVEN_HOME` and click **Edit...** if it exists, or click **New...** if it doesn't exist > write `MAVEN_HOME` in Name and choose `<MVN_PATH>` for Value > confirm changes. The `MAVEN_HOME` value is now changed or added.
 
-> :alarm_clock: **N.B**: The top list (*User variables*) should not contain any Maven-related entries. Delete them if you find them.
+> :pencil: **Note**: The top list (*User variables*) should not contain any Maven-related entries. Delete them if you find them.
 
 #### Path
 
