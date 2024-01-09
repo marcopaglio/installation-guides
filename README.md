@@ -5,7 +5,7 @@ ABOUT
 
 ## Prerequisites
 
-Maven is written in Java, thus the [Java installation](https://github.com/marcopaglio/installation-guides/tree/java#installation-guide) is required.
+Maven is written in Java, thus the [Java installation](https://github.com/marcopaglio/installation-guides/tree/java#installation-guide "Installation guide for Java") is required.
 
 ## Installation Guide
 
@@ -26,7 +26,7 @@ Default locale: it_IT, platform encoding: Cp1252
 OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ```
 Instead, if `mvn` is not recognized as command or the version is not the desired one, then:
-- choose the latest version from the [Maven official webpage](https://maven.apache.org/download.cgi), or another one from the [Apache Maven repository](https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/).
+- choose the latest version from the [Maven official webpage](https://maven.apache.org/download.cgi "Downloading from Apache Maven webpage"), or another one from the [Apache Maven repository](https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/ "Downloading from Apache Maven repository").
 - select the Maven binary zip file (e.g: `apache-maven-3.8.6-bin.zip`) to download it.
 - if it doesn't already exist, create a new folder named `Apache Maven` or `Maven` in `C:\Program Files`.
 - extract the downloaded archive in the Maven folder (it requires administrator permissions).
@@ -70,7 +70,7 @@ If you have not version requirements, install Maven by simply running:
 apt install maven -y
 ```
 
-Otherwise, choose the desired version from the [Apache Maven repository](https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/) and select the Maven binary tar.gz file (e.g: `apache-maven-3.8.6-bin.tar.gz`, let's call it `<BIN_FILE>`) to download it.<br>
+Otherwise, choose the desired version from the [Apache Maven repository](https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/ "Downloading from Apache Maven repository") and select the Maven binary tar.gz file (e.g: `apache-maven-3.8.6-bin.tar.gz`, let's call it `<BIN_FILE>`) to download it.<br>
 Then, place yourself in the folder where the binary was downloaded, open a terminal and extract the archive in any directory (`/usr/local/` or `/opt/` are often used, let's call it `<MVN_DIR>`):
 ```
 tar -xvf `<BIN_FILE>` -C <MVN_DIR>
