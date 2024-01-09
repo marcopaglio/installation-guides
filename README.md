@@ -6,4 +6,4 @@ Tutorials archive for the installation of common softwares and programs for diff
 - [Git](https://github.com/marcopaglio/installation-guides/tree/git#git)
 - [Docker](https://github.com/marcopaglio/installation-guides/tree/docker#docker)
 - [Maven](https://github.com/marcopaglio/installation-guides/tree/maven#maven)
-- [Eclipse](https://github.com/marcopaglio/installation-guides/tree/eclipse#eclipse)
+- [Eclipse](https://github.com/marcopaglio/installation-guides/tree/eclipse#eclipse-ide)
