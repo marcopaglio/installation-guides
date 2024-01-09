@@ -48,7 +48,7 @@ You can check the actual value by running `echo $env:JAVA_HOME` in *another* Com
 
 Alternatively, you can do the same thing manually: **System** > **Advanced System Settings** > **Environment Variables...** > in the lower list (*System variables*) find the entry named `JAVA_HOME` and click **Edit...** if it exists, or click **New...** if it doesn't exist > write `JAVA_HOME` in Name and choose `C:\Program Files\Java\<ARCHIVE_NAME>` for Value > confirm changes. The `JAVA_HOME` value is now changed or added.
 
-> :alarm_clock: **N.B**: The top list (*User variables*) should not contain any Java-related entries. Delete them if you find them.
+> :pencil: **Note**: The top list (*User variables*) should not contain any Java-related entries. Delete them if you find them.
 
 #### Path
 
