@@ -9,9 +9,9 @@ The installation guide depending on your operating system.
 
 ### Windows
 
-A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/desktop/install/windows-install/). It follows an essential extract:
+A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/desktop/install/windows-install/ "Install Docker Desktop on Windows"). It follows an essential extract:
 
-1. Install the last version of WSL from the [Microsoft Store](https://aka.ms/wslstorepage) or update it if a previous version is already installed through `wsl --update`.
+1. Install the last version of WSL from the [Microsoft Store](https://aka.ms/wslstorepage "Install WSL from Microsoft Store") or update it if a previous version is already installed through `wsl --update`.
 
 2. Download the Docker Desktop installer.
 
@@ -19,7 +19,7 @@ A complete step-by-step guide is provided by the [Docker official webpage](https
 
 #### Setup for Maven
 
-If your aim is using Docker with Maven through [docker-maven-plugin](https://github.com/fabric8io/docker-maven-plugin), some stardard configuration must be changed.<br>
+If your aim is using Docker with Maven through [docker-maven-plugin](https://github.com/fabric8io/docker-maven-plugin "See docker-maven-plugin on Github"), some stardard configuration must be changed.<br>
 
 By default, on Windows the Docker daemon is accessible through a named pipe instead of a socket (as in Linux and macOS). When the docker-maven-plugin goals are executed such pipe instances quickly become busy making the goals fail with the following error:
 ```
@@ -34,7 +34,7 @@ setx DOCKER_HOST tcp://localhost:2375 -m
 
 ### Linux
 
-A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/engine/install/ubuntu/). It follows an essential extract:
+A complete step-by-step guide is provided by the [Docker official webpage](https://docs.docker.com/engine/install/ubuntu/ "Install Docker Engine on Ubuntu"). It follows an essential extract:
 
 1. Before you can install Docker Engine, you need to uninstall any conflicting packages by running the following command:
    ```
