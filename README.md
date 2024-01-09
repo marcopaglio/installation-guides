@@ -1,7 +1,7 @@
 
 # Java
 
-[Java technology](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html) is both a programming language and a platform. The *Java programming language* is a high-level object-oriented language that has a particular syntax and style. A *Java platform* is a particular environment in which Java programming language applications run.<br>
+[Java technology](https://docs.oracle.com/javaee/6/firstcup/doc/gkhoy.html "Official source of Java informations") is both a programming language and a platform. The *Java programming language* is a high-level object-oriented language that has a particular syntax and style. A *Java platform* is a particular environment in which Java programming language applications run.<br>
 
 There are three main components of Java programming language:
 
@@ -33,7 +33,7 @@ java -version
 ```
 If something like `openjdk version "xx"` appears, where `xx` is a number, then you already have Java installed.<br>
 Instead, if `java` is not recognized as command or the major version `xx` is not the desired one, then:
-- Download the Java binary zip file from [Oracle](https://www.oracle.com/java/technologies/downloads/archive/) or [OpenJDK](https://jdk.java.net/archive/) archives.
+- Download the Java binary zip file from [Oracle](https://www.oracle.com/java/technologies/downloads/archive/ "Oracle Java archive") or [OpenJDK](https://jdk.java.net/archive/ "OpenJDK Java archive") archives.
 - Extract the archive (let's call it `<ARCHIVE_NAME>`) in `C:\Program Files\Java`.
 
 Once done, set the `JAVA_HOME` and `Path` environment variables that point to the same Java installation to avoid inconsistencies and to decide which Java version an application uses.
