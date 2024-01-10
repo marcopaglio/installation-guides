@@ -23,4 +23,6 @@ Once the installation is finished, you can find Eclipse among your applications.
 
 ### Download external resources automatically
 
-Opening files which define DTD or XSD schemas, like in `pom.xml` and `persistence.xml`, requires those schemas to be downloaded and stored locally; for example, on Linux they are found in the `.lemminx` folder. If you find the error message `Downloading external resources is disabled` coming from these files, you can fix that by modifying Eclipse settings: **Window** > **Preferences** > **XML (Wild Web Developer)** > tick `Download external resources like referenced DTD, XSD` > **Apply** > **Apply and Close**.
+Opening files which define DTD or XSD schemas, like in `pom.xml` and `persistence.xml`, requires those schemas to be downloaded and stored locally; for example, on Linux they are found in the `.lemminx` folder.<br>
+
+If you find the error message `Downloading external resources is disabled` coming from these files, you can fix that by modifying Eclipse settings: **Window** > **Preferences** > **XML (Wild Web Developer)** > tick `Download external resources like referenced DTD, XSD` > **Apply** > **Apply and Close**.
