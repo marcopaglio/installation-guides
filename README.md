@@ -5,7 +5,7 @@ ABOUT
 
 ## Installation Guide
 
-The installation guide depending on your operating system.
+The installation guide depends on your operating system.
 
 ### Windows
 
@@ -28,3 +28,12 @@ If the terminal doesn't recognize the command, then install Git through the foll
 ```
 sudo apt-get update && sudo apt-get install git
 ```
+
+## Before you start
+
+Before starting using Git, you should configure globally a few properties of your user with:
+```
+git config --global user.name "your name"
+git config--global user.email "your email"
+```
+From now on, every commit will be identified by the author with the specified name and email.<br>
