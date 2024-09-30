@@ -1,11 +1,13 @@
 
 # Eclipse IDE
 
-ABOUT
+Eclipse is a multi-language, cross-platform integrated development environment (IDE) designed by a consortium of major companies, called the Eclipse Foundation. It is free software distributed under the terms of the Eclipse Public License.
+
+There are a few types of IDEs to install depending on your programming language and goals. You can find a comparison table of the different versions on the [official website](https://www.eclipse.org/downloads/packages/compare "Compare Eclipse Packages").
 
 ## Installation Guide
 
-The installation guide depending on your operating system.
+The installation guide depends on your operating system.
 
 ### Windows
 
