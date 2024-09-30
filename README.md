@@ -23,7 +23,7 @@ There are four platforms of the Java programming language, each of which consist
 
 ## Installation Guide
 
-The installation guide depending on your operating system.
+The installation guide depends on your operating system.
 
 ### Windows
 
